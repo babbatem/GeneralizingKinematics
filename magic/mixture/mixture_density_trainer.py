@@ -10,7 +10,7 @@ matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 
 import magic.mixture.mdn as mdn
-from magic.shape_inference.utils import *
+from magic.mixture.utils import *
 
 class MDNTrainer(object):
 	""" Trains a mixture density network to predict object kinematics  """
