@@ -59,7 +59,7 @@ class MDNTrainer(object):
 
 				if tloss < best_tloss:
 					print('saving model.')
-					net_fname = 'nets/' + str(self.name) +'.net'
+					net_fname = 'models/' + str(self.name) +'.net'
 					torch.save(self.model.state_dict(), net_fname)
 					best_tloss=tloss
 

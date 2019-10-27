@@ -35,6 +35,9 @@ args=parser.parse_args()
 print(args)
 print('cuda?', torch.cuda.is_available())
 
+# make a models directory
+os.makedirs('models', exist_ok=True)
+
 # set seed for reproducibility
 torch.manual_seed(args.seed)
 
